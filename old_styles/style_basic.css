@@ -1,0 +1,91 @@
+.card {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  line-height: 1.5em;
+ }
+ 
+ .halfwidth {
+ max-width:  30%;
+ margin: auto;
+ !border: 2px solid black;
+ border-radius: 9px;
+ background-color: RGB(252,245,228);
+ box-shadow: 3px 3px 12px grey;
+ }
+ 
+ .night_mode .halfwidth {
+     background: #b36b00;
+     box-shadow: 3px 3px 12px black;
+ }
+ 
+ #typeans {
+  text-align: center;
+  max-width: 300px;
+ }
+ 
+ input#typeans {
+  border-radius: 9px
+ }
+ 
+ .Translation {
+  font-family: Lucida Sans Unicode;
+  color: gray;
+  padding-top: 0.5em;
+ }
+ 
+ .Russian {
+  padding-top: 0.5em;
+ }
+ 
+ IMG {
+  border-radius: 15px;
+ }
+ 
+ div span {
+  max-width: 555px;
+  display: inline-block;
+  text-align: left;
+ }
+ 
+ .card {color: black; background-color: white;}
+ 
+ #typeans span {background-color: #fcf5e4;}
+ .night_mode #typeans span {background-color: #b36b00;}
+ 
+ .typeBad {color: #dc322f;font-weight:bold;font-size: 23px;}
+ .night_mode .typeBad {color: #dc322f; font-weight:bold; font-size: 23px;}
+ 
+ .typeMissed, .typePass {  color: #268bd2;font-weight:bold;font-size: 23px;}
+ .night_mode .typeMissed, .typePass {  color: #1C4D71; font-weight:bold; font-size: 23px;}
+ 
+ .typeGood{color: #2ed85a;font-weight:bold;} 
+ .night_mode .typeGood{color: #24742E; font-weight:bold;} 
+ 
+ .small {
+ color: #27AE60;
+ font-size: 0.7em;
+ }
+ 
+ .Deck {
+  position: absolute; top: 7px; left: 0px; width: 100%;
+ }
+ 
+ #Deck {
+  font-size: 8pt;  vertical-align: top; line-height: 10pt;
+ }
+ 
+ .Russian {
+ font-family: Lucida Sans Unicode;
+ color: gray;
+ font-size: 15px;
+ padding-top: 0.5em;
+ }
+ 
+ .Help {
+  font-family: Lucida Sans Unicode;
+ font-size: 15px;
+ padding-top: 0.5em;
+ }

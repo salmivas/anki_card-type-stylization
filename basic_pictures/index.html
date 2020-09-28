@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="card">
+    <!-- Front template copy from this line -->
+    <div class="card__deckname">
+      <span> {{Deck}} </span>
+    </div>
+    <section class="card__wrapper">
+      <div class="card__question">
+        <!-- {{IMG}} -->
+        <img src="img.jpg" alt="img" />
+      </div>
+      <!-- {{type:English}} -->
+      <input id="typeans" type="text" placeholder="answer" />
+      <div class="Help">
+        <!-- <span>{{hint:Help}}</span> -->
+        <span>
+          <a class="hint" href="">help</a>
+        </span>
+      </div>
+    </section>
+    <script>
+      var documentInput = document.getElementById("typeans");
+      var PLACEHOLDER_NAME = "answer";
+
+      documentInput.style = null;
+      documentInput.placeholder = PLACEHOLDER_NAME;
+    </script>
+    <!-- to this line -->
+
+    <!-- Back template copy from this line -->
+    <div class="card__deckname">
+      <span> {{Deck}} </span>
+    </div>
+    <section class="card__wrapper">
+      <div class="card__question">
+        <!-- {{IMG}} -->
+        <img src="img.jpg" alt="img" />
+        <!-- {{type:cloze:English}} -->
+      </div>
+      <!-- <div class="Translation"><span>{{Am&BrTranscription}}</span></div> -->
+      <div class="Translation"><span>BrE [dɪˈtɜː(r)] NAmE [dɪˈtɜːr]</span></div>
+      <!-- <div class="Russian"><span>{{hint:Russian}}</span></div> -->
+      <div class="Russian">
+        <span>
+          <a
+            class="hint"
+            href="#"
+            onclick="this.style.display='none';
+        document.getElementById('hintf0919b9563118e21').style.display='block';
+        return false;"
+          >
+            Russian</a
+          >
+          <div id="hintf0919b9563118e21" class="hint" style="display: none">
+            v. -&nbsp;удерживать, останавливать; отпугивать;
+            <div>-&nbsp;удерживать от совершения чего-л. (с помощью средств устрашения);</div>
+          </div>
+        </span>
+      </div>
+      <!-- <div class="Sound"><span>{{Sound}}</span></div> -->
+      <div class="Sound">
+        <span>
+          <a class="replay-button soundLink" href="#" onclick="pycmd('play:a:0'); return false;">
+            <svg class="playImage" viewBox="0 0 64 64" version="1.1">
+              <circle cx="32" cy="32" r="29"></circle>
+              <path d="M56.502,32.301l-37.502,20.101l0.329,-40.804l37.173,20.703Z"></path>
+            </svg> </a
+        ></span>
+      </div>
+    </section>
+    <script>
+      var playImage = document.querySelector(".playImage");
+
+      playImage.remove();
+    </script>
+    <!-- to this line -->
+  </body>
+</html>
+
+<!-- <div class=Deck><span id=Deck>{{Deck}}</span></div>
+<br>
+<script>document.getElementById('Deck').innerHTML="{{Deck}}".replace("::"," &minus; ");</script>
+
+<div class="halfwidth">
+<br>
+{{IMG}}
+{{type:English}}
+<div class=Help><span>{{hint:Help}}</span></div>
+</div> -->
+
+<!-- <div class=Deck><span id=Deck>{{Deck}}</span></div>
+<script>document.getElementById('Deck').innerHTML="{{Deck}}".replace("::"," &minus; ");</script>
+<br>
+
+<div class="halfwidth">
+<br>
+{{IMG}}
+{{type:English}}
+
+<hr id=answer>
+
+<div class=Translation><span>{{Am&BrTranscription}}</span></div>
+
+<div class=Russian><span>{{hint:Russian}}</span></div>
+<div class=Audio><span>{{Audio}}</span></div>
+</div> -->

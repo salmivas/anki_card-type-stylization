@@ -1,0 +1,17 @@
+<div class=Deck><span id=Deck>{{Deck}}</span></div>
+<script>
+  document.getElementById('Deck').innerHTML = "{{Deck}}".replace("::", " − ");
+</script><br>
+<div class="halfwidth">
+  <div class=English><span>
+      <table>
+        <tr>
+          <td>{{IMG}}</td>
+          <td>{{cloze:English}}</td>
+        </tr>
+      </table>
+    </span></div>
+  {{type:cloze:English}}
+  <div class=Help><span>{{hint:Help}}</span></div>
+  <div class=Extra><span>{{Extra}}</span></div>
+</div>

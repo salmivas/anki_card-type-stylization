@@ -1,0 +1,145 @@
+.card {
+  color: black;
+  !background-color: white;
+}
+
+.halfwidth {
+  max-width: 50%;
+  margin: auto;
+  !border: 2px solid black;
+  border-radius: 9px;
+  background: #fcf5e4;
+  box-shadow: 3px 3px 12px grey;
+  padding-bottom: 1em;
+}
+
+.night_mode .halfwidth {
+  background: #b36b00;
+  box-shadow: 3px 3px 12px black;
+}
+
+.card {
+  font-family: arial;
+  line-height: 1.75em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cloze {
+  font-weight: bold;
+  color: #107895;
+}
+
+#typeans {
+  padding-top: 0.2em;
+  text-align: center;
+  max-width: 12em;
+}
+
+input#typeans {
+  border-radius: 9px;
+}
+
+.Translation {
+  font-family: Lucida Sans Unicode;
+  color: black;
+  padding-top: 0.5em;
+}
+IMG {
+  !border: 0.1px solid black;
+  border-radius: 19px;
+}
+
+div span {
+  max-width: 900px;
+  display: inline-block;
+  text-align: left;
+}
+
+.English {
+  padding: 1em;
+}
+
+.English IMG {
+  float: left;
+}
+
+#typeans span {
+  background-color: #fcf5e4;
+}
+.night_mode #typeans span {
+  background-color: #b36b00;
+}
+
+.typeBad {
+  color: #dc322f;
+  font-weight: bold;
+  font-size: 23px;
+}
+.night_mode .typeBad {
+  color: #dc322f;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.typeMissed,
+.typePass {
+  color: #268bd2;
+  font-weight: bold;
+  font-size: 23px;
+}
+.night_mode .typeMissed,
+.typePass {
+  color: #1c4d71;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.typeGood {
+  color: #2ed85a;
+  font-weight: bold;
+}
+.night_mode .typeGood {
+  color: #24742e;
+  font-weight: bold;
+}
+
+.hint {
+  color: #107895;
+  font-size: 1em;
+}
+
+.small {
+  color: #27ae60;
+  font-size: 0.7em;
+}
+
+.Deck {
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  width: 100%;
+}
+
+#Deck {
+  line-height: 2em;
+  font-size: 8pt;
+  vertical-align: top;
+}
+
+.Russian {
+  font-family: Lucida Sans Unicode;
+  color: gray;
+  font-size: 15px;
+  padding-top: 0.5em;
+}
+.Extra {
+  font-family: Lucida Sans Unicode;
+  font-size: 11px;
+  line-height: 0.75em;
+}
+.Help {
+  font-family: Lucida Sans Unicode;
+  font-size: 15px;
+  padding-top: 0.5em;
+}
