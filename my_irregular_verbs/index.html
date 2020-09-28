@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="card">
+    <!-- Front template copy from this line -->
+    <div class="card__deckname">
+      <span> {{Deck}} </span>
+    </div>
+    <section class="card__wrapper">
+      <p class="card__question">
+        What is the past simple and past participle of the verb <span>to {{the-verb}}</span>?
+      </p>
+      <!-- {{picture}} -->
+      <img src="img.jpg" alt="img" />
+      <!-- {{type:typeans}} -->
+      <input id="typeans" type="text" placeholder="answer" />
+    </section>
+    <script>
+      var documentInput = document.getElementById("typeans");
+      var cardImage = document.querySelector("img");
+      var cardQuestion = document.querySelector(".card__question");
+      var PLACEHOLDER_NAME = "answer";
+      var MARGIN_BOTTOM = "0 0 5%";
+
+      documentInput.style = null;
+      documentInput.placeholder = PLACEHOLDER_NAME;
+
+      if (!cardImage) {
+        cardQuestion.style.margin = MARGIN_BOTTOM;
+      }
+    </script>
+    <!-- to this line -->
+
+    <!-- Back template copy from this line -->
+    <div class="card__deckname">
+      <span> {{Deck}} </span>
+    </div>
+    <section class="card__wrapper">
+      <p class="card__question">
+        What is the past simple and past participle of the verb <span>to {{the-verb}}</span>?
+      </p>
+      <!-- {{picture}} -->
+      <img src="img.jpg" alt="img" />
+      <div class="card__typeans">{{type:typeans}}</div>
+      <div class="card__tenses-info">
+        <p>Present Simple: <span>{{the-verb}} [{{transcription}}]</span>;</p>
+        <p>Past Simple: <span>{{past-simple-form}} [{{past-simple-transcription}}]</span>;</p>
+        <p>Past Participle: <span>{{past-participle-form}} [{{past-participle-transcription}}]</span>;</p>
+      </div>
+      {{hint:translation}}
+    </section>
+    <script>
+      var cardImage = document.querySelector("img");
+      var cardQuestion = document.querySelector(".card__question");
+      var typeAns = document.querySelector(".card__typeans > span");
+      var MARGIN_BOTTOM = "0 0 5%";
+
+      if (typeAns && typeAns.style) {
+        typeAns.removeAttribute("style");
+      }
+
+      if (!cardImage) {
+        cardQuestion.style.margin = MARGIN_BOTTOM;
+      }
+    </script>
+    <!-- to this line -->
+  </body>
+</html>
