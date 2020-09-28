@@ -45,6 +45,7 @@
           <p>{{cloze:english-example}}</p>
         </div>
       </div>
+      <div class="card__typeans">{{type:cloze:english-explanation}}</div>
       <!-- <div class="card__transcription"><span>{{transcription}}</span></div> -->
       <div class="card__transcription"><span>BrE [dɪˈtɜː(r)] NAmE [dɪˈtɜːr]</span></div>
       <!-- <div class="card__russian"><span>{{hint:russian}}</span></div> -->
@@ -59,9 +60,7 @@
           >
             Russian</a
           >
-          <div id="hintf0919b9563118e21" class="hint" style="display: none">
-            обязательство
-          </div>
+          <div id="hintf0919b9563118e21" class="hint" style="display: none">обязательство</div>
         </span>
       </div>
       <!-- <div class="card__sound"><span>{{sound}}</span></div> -->
@@ -78,9 +77,13 @@
     <script>
       var playImage = document.querySelector(".playImage");
       var documentInput = document.getElementById("typeans");
+      var typeAns = document.querySelector(".card__typeans > span");
+
+      if (typeAns && typeAns.style) {
+        typeAns.removeAttribute("style");
+      }
 
       playImage.remove();
-      documentInput.parentElement.style.margin = "0 0 10px";
     </script>
     <!-- to this line -->
   </body>

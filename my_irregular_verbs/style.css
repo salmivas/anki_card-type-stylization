@@ -12,6 +12,7 @@
   --grey: hsl(0, 0%, 80%);
   --black: hsl(0, 0%, 0%);
   --bottom-margin: 0 0 10px;
+  --block-bottom-margin: 0 0 5%;
 }
 
 /* remove on paste into Anki*/
@@ -101,7 +102,7 @@ code {
 }
 
 .card__typeans {
-  margin: 0 0 5%;
+  margin: var(--block-bottom-margin);
 }
 
 .card__tenses-info {

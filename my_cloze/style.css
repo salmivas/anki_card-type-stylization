@@ -10,6 +10,7 @@
   --grey: hsl(0, 0%, 80%);
   --black: hsl(0, 0%, 0%);
   --bottom-margin: 0 0 10px;
+  --block-bottom-margin: 0 0 5%;
 }
 
 /* remove on paste into Anki*/
@@ -71,7 +72,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 0 20px;
+  margin: var(--block-bottom-margin);
 }
 
 .card__explanation {
@@ -144,6 +145,10 @@ code {
 
 .typeMissed {
   background-color: var(--grey);
+}
+
+.card__typeans {
+  margin: var(--block-bottom-margin);
 }
 
 .card__transcription {
