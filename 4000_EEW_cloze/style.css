@@ -1,4 +1,5 @@
 :root {
+  --white: hsl(0, 0%, 100%);
   --yellow: hsl(41, 100%, 96%);
   --yellow2: hsl(36, 100%, 99%);
   --royal-blue: hsl(223, 44%, 26%);
@@ -40,13 +41,14 @@ code {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .card__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 50%;
   padding: 3%;
   box-sizing: border-box;
 
@@ -124,23 +126,27 @@ code {
 }
 
 .Translation {
+  max-width: 50%;
   margin: var(--bottom-margin);
 }
 
 .Translation span {
+  display: block;
+  margin: 0 auto;
+
   color: var(--black);
   font-size: 15px;
 }
 
 .Russian {
   margin: var(--bottom-margin);
+  max-width: 50%;
 
   font-size: 0;
 }
 
 .Russian .hint {
   font-size: 15px;
-  max-width: 50%;
   margin: 0 auto;
   color: var(--merry);
 }
@@ -164,6 +170,15 @@ code {
 
 .Sound .replay-button:hover {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vidth='20' height='20' viewBox='0 0 24 24' fill='hsl(8, 83%, 34%)' %3E%3Cg%3E%3Cpath d='M20.436 11.37L5.904 2.116c-.23-.147-.523-.158-.762-.024-.24.132-.39.384-.39.657v18.5c0 .273.15.525.39.657.112.063.236.093.36.093.14 0 .28-.04.402-.117l14.53-9.248c.218-.138.35-.376.35-.633 0-.256-.132-.495-.348-.633z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+body.nightMode {
+  color: var(--royal-blue);
+}
+
+.nightMode .card__deckname span {
+  color: var(--white);
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {

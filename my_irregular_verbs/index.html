@@ -52,13 +52,30 @@
         <p>Past Simple: <span>{{past-simple-form}} [{{past-simple-transcription}}]</span>;</p>
         <p>Past Participle: <span>{{past-participle-form}} [{{past-participle-transcription}}]</span>;</p>
       </div>
-      {{hint:translation}}
+      {{hint:translation}} {{sound}}
     </section>
     <script>
       var cardImage = document.querySelector("img");
       var cardQuestion = document.querySelector(".card__question");
       var typeAns = document.querySelector(".card__typeans > span");
+      var playImage = document.querySelector(".playImage");
+      var tensesSpans = document.querySelectorAll(".card__tenses-info span");
       var MARGIN_BOTTOM = "0 0 5%";
+      var TAG_TO_REMOVE = "br";
+
+      if (tensesSpans) {
+        tensesSpans.forEach((span) => {
+          Array.from(span.children).forEach((child) => {
+            if (child.localName === TAG_TO_REMOVE) {
+              child.remove();
+            }
+          });
+        });
+      }
+
+      if (playImage) {
+        playImage.remove();
+      }
 
       if (typeAns && typeAns.style) {
         typeAns.removeAttribute("style");
